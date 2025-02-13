@@ -1,0 +1,23 @@
+[package]
+name              = "compiler"
+version           = "0.1.0"
+publish.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lib]
+name    = "compiler"
+path    = "src/lib.rs"
+doctest = true
+
+[[bin]]
+name = "compiler"
+path = "src/main.rs"
+
+[dependencies]
+log                = "0.4.20"
+tracing-subscriber = { version = "0.3.18", features = ["fmt", "env-filter"] }
+thiserror          = "2.0.11"
+clap               = { version = "4.4.10", features = ["derive"] }
+vm                 = { path = "../vm" }

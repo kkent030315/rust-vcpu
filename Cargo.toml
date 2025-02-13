@@ -1,0 +1,7 @@
+[workspace]
+resolver        = "2"
+members         = ["benchmark", "compiler", "vm", "www/wasm", "benchmark"]
+package.publish = false
+package.edition = "2024"
+package.authors = ["github.com/kkent030315"]
+package.license = "MIT"

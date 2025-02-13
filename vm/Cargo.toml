@@ -1,0 +1,15 @@
+[package]
+name              = "vm"
+version           = "0.1.0"
+publish.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lib]
+doctest = true
+
+[dependencies]
+thiserror    = "2.0.11"
+strum        = "0.26.3"
+strum_macros = "0.26.3"
